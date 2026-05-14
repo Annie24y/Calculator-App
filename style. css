@@ -4,6 +4,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+  transition: background 0.3s, color 0.3s;
 }
 
 .container {
@@ -12,6 +13,7 @@ body {
   border-radius: 10px;
   width: 300px;
   text-align: center;
+  transition: background 0.3s, color 0.3s;
 }
 
 #display {
@@ -34,4 +36,20 @@ button {
   padding: 15px;
   font-size: 18px;
   cursor: pointer;
+}
+
+/* Dark mode */
+.dark-mode {
+  background: #121212;
+}
+
+.dark-mode .container {
+  background: #1e1e1e;
+  color: white;
+}
+
+.dark-mode #display {
+  background: #333;
+  color: white;
+  border: 1px solid #555;
 }
